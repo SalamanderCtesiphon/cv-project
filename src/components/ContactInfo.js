@@ -20,6 +20,7 @@ class ContactInfo extends Component {
     render() {
         return (
             <div className="inputForm">
+                <h2>Contact Info</h2>
                 <form>
                     <label>
                         Name:
@@ -53,6 +54,7 @@ class ContactInfo extends Component {
                         Country:
                         <input type="text" name="country" />
                     </label>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         );
