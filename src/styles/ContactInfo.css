@@ -1,8 +1,10 @@
 .inputForm {
     border: 2px solid #000;
+    border-radius: 4px;
     height: fit-content;
     width: 20vw;
     display: flex;
+    margin-left: 1vw;
 }
 
 form {
@@ -14,4 +16,8 @@ form {
     height: 100%;
     padding: 6px;
     margin: 6px;
+}
+
+h2 {
+    padding: 5px;
 }
