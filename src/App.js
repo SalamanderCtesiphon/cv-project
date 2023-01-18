@@ -5,6 +5,13 @@ import Education from "./components/Education";
 import PracticalExperience from "./components/PracticalExperience";
 
 class App extends React.Component {
+    constructor(props) {
+        super();
+
+        this.state = {
+            
+        }
+    }
     render() {
         return (
             <div>
