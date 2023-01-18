@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import ContactInfo from "./components/ContactInfo";
-
+import Education from "./components/Education"
 
 class App extends React.Component {
     render() {
@@ -9,6 +9,7 @@ class App extends React.Component {
             <div>
                 <Header />
                 <ContactInfo />
+                <Education />
             </div>
         );
     }
