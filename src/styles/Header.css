@@ -1,8 +1,8 @@
-h1 {
+h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(72, 71, 71);
     color: antiquewhite;
-    height: 10vh;
+    height: 6vh;
 }

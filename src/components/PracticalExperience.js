@@ -19,7 +19,7 @@ class PracticalExperience extends Component {
     render() {
         return (
             <div className="inputForm">
-                <h2>Experience</h2>
+                <h3>Experience</h3>
                 <form>
                     <label>
                         Name of Company:
@@ -47,7 +47,7 @@ class PracticalExperience extends Component {
                     </label>
                     <label>
                         Description of Duties:
-                        <input type="text" name="description" />
+                        <textarea name="description"></textarea>
                     </label>
                     <button type="submit">Submit</button>
                 </form>

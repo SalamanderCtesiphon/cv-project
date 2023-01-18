@@ -17,7 +17,7 @@ class Education extends Component {
     render() {
         return (
             <div className="inputForm">
-                <h2>Education</h2>
+                <h3>Education</h3>
                 <form>
                     <label>
                         Name of Institution:

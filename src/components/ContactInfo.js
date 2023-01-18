@@ -20,7 +20,7 @@ class ContactInfo extends Component {
     render() {
         return (
             <div className="inputForm">
-                <h2>Contact Info</h2>
+                <h3>Contact Info</h3>
                 <form>
                     <label>
                         Name:
