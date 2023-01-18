@@ -29,7 +29,7 @@ class Education extends Component {
                     </label>
                     <label>
                         Start Date:
-                        <input type="text" name="Start Date" />
+                        <input type="text" name="startDate" />
                     </label>
                     <label>
                         Completion Date:
