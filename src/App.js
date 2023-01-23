@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
-import ContactInfo from "./components/ContactInfo";
-import Education from "./components/Education";
-import PracticalExperience from "./components/PracticalExperience";
 import Page from "./components/Page";
+import './App.css'
 
 class App extends React.Component {
     constructor(props) {
-        super();
+        super(props);
 
         this.state = {
             
@@ -15,11 +12,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Header />
-                <ContactInfo />
-                <Education />
-                <PracticalExperience />
+            <div className="App">
                 <Page />
             </div>
         );
