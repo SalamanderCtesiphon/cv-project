@@ -16,7 +16,7 @@ class Education extends Component {
 
     render() {
         return (
-            <div className="inputForm gridItem">
+            <div className="inputForm education">
                 <h3>Education</h3>
                 <form>
                     <label>

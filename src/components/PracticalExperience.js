@@ -18,7 +18,7 @@ class PracticalExperience extends Component {
 
     render() {
         return (
-            <div className="inputForm gridItem">
+            <div className="inputForm experience">
                 <h3>Experience</h3>
                 <form>
                     <label>

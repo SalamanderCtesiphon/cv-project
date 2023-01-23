@@ -19,7 +19,7 @@ class ContactInfo extends Component {
 
     render() {
         return (
-            <div className="inputForm gridItem">
+            <div className="inputForm contactInfo">
                 <h3>Contact Info</h3>
                 <form>
                     <label>
