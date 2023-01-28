@@ -1,7 +1,7 @@
 
 import '../styles/ContactInfo.css';
 
-const ContactInfo = ({ submitContactInfo, setName, setEmail }) => {
+const ContactInfo = ({ submitContactInfo, setName, setEmail, firstName, email }) => {
     
         return (
             <div className="inputForm contactInfo">
@@ -12,6 +12,7 @@ const ContactInfo = ({ submitContactInfo, setName, setEmail }) => {
                         <input 
                             type="text" 
                             name="name"
+                            value={firstName}
                             onChange={(e) => setName(e.target.value)} 
                         />
                     </label>
@@ -20,6 +21,7 @@ const ContactInfo = ({ submitContactInfo, setName, setEmail }) => {
                         <input 
                             type="text" 
                             name="email"
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)} 
                         />
                     </label>

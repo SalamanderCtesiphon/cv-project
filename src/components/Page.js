@@ -14,7 +14,7 @@ const  Page = () => {
   const submitContactInfo= (e) => {
     e.preventDefault()
 
-    addInfo(firstName, email)
+    addInfo({ firstName, email })
 
     setName('')
     setEmail('')
@@ -37,11 +37,13 @@ const  Page = () => {
           submitContactInfo={submitContactInfo} 
           setName={setName}
           setEmail={setEmail}
+          firstName={firstName}
+          email={email}
         />
         <Education />
         <PracticalExperience />
         <div className='resume'>
-          <div>{firstName}</div>
+          <div>{contactInfo.firstName}</div>
           {contactInfo.email}
         </div>
       </div>
