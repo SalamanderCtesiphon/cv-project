@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
 
-export class Resume extends Component {
-  render() {
+const Resume = ({ contactInfo }) => {
+
     return (
-      <div className='resume'>Resume</div>
+      <div className='resume'>
+        {contactInfo.firstName}
+        {contactInfo.email}
+      </div>
     )
-  }
 }
 
 export default Resume

@@ -1,19 +1,27 @@
 
 import '../styles/ContactInfo.css';
 
-const ContactInfo = () => {
+const ContactInfo = ({ submitContactInfo, setName, setEmail }) => {
     
         return (
             <div className="inputForm contactInfo">
                 <h3>Contact Info</h3>
-                <form>
+                <form onSubmit={submitContactInfo}>
                     <label>
                         Name:
-                        <input type="text" name="name" />
+                        <input 
+                            type="text" 
+                            name="name"
+                            onChange={(e) => setName(e.target.value)} 
+                        />
                     </label>
                     <label>
                         Email:
-                        <input type="text" name="email" />
+                        <input 
+                            type="text" 
+                            name="email"
+                            onChange={(e) => setEmail(e.target.value)} 
+                        />
                     </label>
                     <label>
                         Phone:
