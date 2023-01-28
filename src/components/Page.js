@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import Header from './Header'
 import ContactInfo from './ContactInfo'
 import Education from './Education'
@@ -6,8 +5,9 @@ import PracticalExperience from './PracticalExperience'
 import '../App.css'
 import Resume from './Resume'
 
-export class Page extends Component {
-  render() {
+const  Page = () => {
+
+  
     return (
       <div className='gridContainer'>
         <Header />
@@ -17,7 +17,6 @@ export class Page extends Component {
         <Resume />
       </div>
     )
-  }
 }
 
 export default Page

@@ -1,23 +1,8 @@
-import React, { Component } from "react";
+
 import '../styles/ContactInfo.css';
 
-class ContactInfo extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            name: "",
-            email: "",
-            phone: "",
-            address: "",
-            city: "",
-            state: "",
-            zip: "",
-            country: ""
-        };
-    }
-
-    render() {
+const ContactInfo = () => {
+    
         return (
             <div className="inputForm contactInfo">
                 <h3>Contact Info</h3>
@@ -58,7 +43,6 @@ class ContactInfo extends Component {
                 </form>
             </div>
         );
-    }
 }
 
 export default ContactInfo;
