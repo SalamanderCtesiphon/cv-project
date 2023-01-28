@@ -26,7 +26,7 @@ const  Page = () => {
   const addInfo = (contactInfo) => {
     const id = Math.floor(Math.random() * 10000) +1
     const newContactInfo = {id, firstName, email}
-    setContactInfo([...contactInfo, newContactInfo])
+    setContactInfo([contactInfo, newContactInfo])
   }
 
   
@@ -41,7 +41,7 @@ const  Page = () => {
         <Education />
         <PracticalExperience />
         <div className='resume'>
-          {firstName}
+          <div>{firstName}</div>
           {contactInfo.email}
         </div>
       </div>
