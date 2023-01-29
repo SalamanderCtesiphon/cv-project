@@ -5,7 +5,7 @@ import '../styles/Header.css';
 const Header = () => {
     return (
         <header className="header gridItem">
-        <h3>Project: CV Aplication</h3>
+        <h3>Project: CV Application</h3>
         </header>
     );
     }

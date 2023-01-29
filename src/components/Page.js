@@ -6,48 +6,21 @@ import '../App.css'
 
 import { useState } from 'react'
 
-const  Page = () => {
-  const [contactInfo, setContactInfo] = useState([]);
-  const [firstName, setName] = useState('');
-  const [email, setEmail] = useState('');
-
-  const submitContactInfo= (e) => {
-    e.preventDefault()
-
-    addInfo({ firstName, email })
-
-    setName('')
-    setEmail('')
-
-    console.log(contactInfo);
-
-  }
-
-  const addInfo = (contactInfo) => {
-    const id = Math.floor(Math.random() * 10000) +1
-    const newContactInfo = {id, firstName, email}
-    setContactInfo([contactInfo, newContactInfo])
-  }
-
+const  Page = (props) => {
   
-    return (
-      <div className='gridContainer'>
-        <Header />
-        <ContactInfo 
-          submitContactInfo={submitContactInfo} 
-          setName={setName}
-          setEmail={setEmail}
-          firstName={firstName}
-          email={email}
-        />
-        <Education />
-        <PracticalExperience />
-        <div className='resume'>
-          <div>{contactInfo.firstName}</div>
-          {contactInfo.email}
-        </div>
-      </div>
-    )
+  function addContactInfo(name) {
+    const contactInfo = { name }
+  } 
+  
+  return (
+    <div className='gridContainer'>
+      <Header />
+      <ContactInfo />
+      <Education />
+      <PracticalExperience />
+      <Page addContactInfo={addContactInfo}/>
+    </div>
+  )
 }
 
 export default Page
